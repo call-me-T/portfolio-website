@@ -1,0 +1,300 @@
+:root {
+  --primary-color: #00065E;
+  --secondary-color: #e3dac9;
+  --dark-grey: #2b2b2b;
+}
+
+
+body {
+ background-color: #4F3D2F;
+}
+body {
+  font-family: 'Lato', Special Elite;
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary-color);
+}
+a:visited {
+  /* visited link */
+  color: var(--primary-color);
+}
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+a:active {
+  /* selected link */
+  color: var(--primary-color);
+}
+
+button, .button {
+  text-align: center;
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.9s opacity;
+  transition: 0.9s opacity;
+}
+button, .button:hover, button, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 2;
+}
+.button__secondary {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+.navigation-list__item--active {
+  text-decoration: none;
+  color: #000066;
+}
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-style: solid;
+   padding: 5em 1.3em;
+  border-style: solid;
+    border-width: 10px;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+.intro-link {
+      background: #e3dac9;
+      color: #6c6022;
+      text-decoration: none;
+      padding: .6em 1.3em;
+      font-size: 1.4em;
+      border-radius: 5em;
+      text-align: center;
+      font-weight: bold;
+      display: inline-block;
+    }
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-footer {
+    color: var(--secondary-color);
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+
+}
+.profile__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+}
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--secondary-color);
+}
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+.page-header__item:last-child {
+  -webkit-box-flex: .95;
+      -ms-flex-positive: .95;
+          flex-grow: .95;
+  text-align: right;
+}
+.navigation-list {
+  list-style-type: none;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.grid__item {
+  border-style: solid;
+    border-width: 10px;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+.work-link {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+      text-decoration: none;
+      padding: .2em 1.3em;
+      font-size: 1.4em;
+      border-radius: 5em;
+      text-align: center;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+    .work-title {
+      color: var(--secondary-color);
+      text-align: center;
+    }
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+ .about-main {
+   max-width: 700px;
+   margin-left: 35em;
+   text-align: center;
+ list-style-type: none;
+ }
+
+ .cowboy {
+ margin-top: 3em;
+ margin-left: 0em;
+ }
+ @-webkit-keyframes color-change {
+  from {
+    fill: #FAC847;
+  }
+  to {
+    fill: #F1850B;
+  }
+}
+ @keyframes color-change {
+  from {
+    fill: #FAC847;
+  }
+  to {
+    fill: #F1850B;
+  }
+}
+ .st1 {
+  -webkit-animation: 20s color-change infinite alternate linear;
+          animation: 20s color-change infinite alternate linear;
+}
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(-1000px, 50px);
+            transform: translate(-1000px, 50px);
+  }
+}
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(-1000px, 50px);
+            transform: translate(-1000px, 50px);
+  }
+}
+#Cloud {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+ table {
+   color: var(--secondary-color);
+   text-align: center;
+   margin-left: 45em;
+   margin-top: 5em;
+   margin-bottom: 5em;
+ }
+
+ .main-contact {
+   color: var(--secondary-color);
+ }
+ .contact-footer {
+   background: var(--secondary-color);
+   color: var(--primary-color);
+   text-decoration: none;
+   padding: .2em 1.3em;
+   font-size: 1.4em;
+   border-radius: 5em;
+   text-align: center;
+   font-weight: bold;
+   display: inline-block;
+   margin-bottom: 1em;
+   margin-left: 30em;
+   margin-top: 5em;
+ }

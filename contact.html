@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rhoades Developing</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <header class="page-header">
+        <!-- Logo goes here -->
+        <img src="img/Rhoades-Developing Logo.svg" width="200px" height="100px" alt="Rhoades Developing Logo">
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="Go to about page" class="navigation-list__item">About Me</a>
+            </li>
+            <li role="presentation">
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+             </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+            </li>
+        </ul>
+      </nav>
+  </header>
+    <main class="main-contact">
+      <section>
+        <article>
+          <header>
+            <p> Feel free to reach out to one of our developers to start your journey on your very own website. </p>
+          </header>
+        </article>
+      </section>
+        <form action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email">Email: </label>
+          <input type="email" id="contact-email" required>
+
+          <label class="standard-label" for="contact-Telephone">Telephone: </label>
+          <input type="tel" id="contact-Telephone"pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+          <label class="standard-label" for="contact-message">Message: </label>
+          <textarea id="contact-message" maxlength="240" required></textarea>
+          <input type="submit" value="Send message">
+        </form>
+    </main>
+    <footer class="contact-footer">
+      <h1>CONTACT</h1>
+      <div>
+        fake address<br>
+        1234 Fake str. <br>
+        Cell <a href="tel:+1234567890" role="call">call me at (123) 456-7890</a> <br>
+        Email:
+        <a href="hello.Rhoadesdeveloping.com">hello.Rhoadesdeveloping.com</a><br>
+        <a href="office@Rhoadesdeveloping.com">office@Rhoadesdeveloping.com</a>
+      </footer>
+      <script src="js/tota11y.min.js"></script>
+   </body>
+</html>
