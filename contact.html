@@ -14,14 +14,14 @@
   <body>
       <header class="page-header">
         <!-- Logo goes here -->
-        <img src="img/Rhoades-Developing Logo.svg" width="200px" height="100px" alt="Rhoades Developing Logo">
+        <img src="img/Rhoades-Developing-Logo.svg" width="200" height="100" alt="Rhoades Developing Logo">
         <nav class="main-navigation page-header__item">
           <ul role="menubar" class="navigation-list">
             <li role="presentation">
               <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
             </li>
             <li role="presentation">
-              <a href="about.html" role="Go to about page" class="navigation-list__item">About Me</a>
+              <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
             </li>
             <li role="presentation">
                 <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
@@ -40,12 +40,12 @@
           </header>
         </article>
       </section>
-        <form action="" method="post" id="contact-form">
+        <form action="action_page.php" method="post" id="contact-form">
           <label class="standard-label" for="contact-email">Email: </label>
           <input type="email" id="contact-email" required>
 
-          <label class="standard-label" for="contact-Telephone">Telephone: </label>
-          <input type="tel" id="contact-Telephone"pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+          <label class="standard-label" for="contact-Telephone">Telephone:</label>
+          <input type="tel" id="contact-Telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
           <label class="standard-label" for="contact-message">Message: </label>
           <textarea id="contact-message" maxlength="240" required></textarea>
@@ -57,10 +57,11 @@
       <div>
         fake address<br>
         1234 Fake str. <br>
-        Cell <a href="tel:+1234567890" role="call">call me at (123) 456-7890</a> <br>
+        Cell <a href="tel:+1234567890">call me at (123) 456-7890</a> <br>
         Email:
         <a href="hello.Rhoadesdeveloping.com">hello.Rhoadesdeveloping.com</a><br>
         <a href="office@Rhoadesdeveloping.com">office@Rhoadesdeveloping.com</a>
+      </div>
       </footer>
       <script src="js/tota11y.min.js"></script>
    </body>
