@@ -5,6 +5,7 @@
 }
 
 
+
 body {
  background-color: #4F3D2F;
 }
@@ -208,10 +209,10 @@ button, .button:hover, button, .button:focus {
  }
  @keyframes color-change {
   from {
-    fill: #FAC847;
+    color: #FAC847;
   }
   to {
-    fill: #F1850B;
+    color: #F1850B;
   }
 }
  .st1 {
