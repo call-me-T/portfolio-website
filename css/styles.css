@@ -232,9 +232,7 @@ button, .button:hover, button, .button:focus {
  table {
    color: var(--secondary-color);
    text-align: center;
-   margin-left: 45em;
-   margin-top: 5em;
-   margin-bottom: 5em;
+   margin: 5em auto;
  }
 
  .main-contact {
