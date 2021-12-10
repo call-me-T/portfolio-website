@@ -146,15 +146,13 @@ button, .button:hover, button, .button:focus {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
 }
 .grid__item {
   border-style: solid;
     border-width: 10px;
   border-color: var(--secondary-color);
   color: var(--secondary-color);
-  text-align: center;
+
 }
 .work-link {
       background: var(--secondary-color);
@@ -168,10 +166,7 @@ button, .button:hover, button, .button:focus {
       display: inline-block;
       margin-bottom: 1em;
     }
-    .work-title {
-      color: var(--secondary-color);
-      text-align: center;
-    }
+
 
 @media all and (max-width: 500px) {
   .grid {
