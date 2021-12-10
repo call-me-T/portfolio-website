@@ -121,6 +121,7 @@ button, .button:hover, button, .button:focus {
   border-radius: 50%
 }
 
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -174,9 +175,7 @@ button, .button:hover, button, .button:focus {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  margin: 0 auto;
 }
 .grid__item {
   border-style: solid;
@@ -285,13 +284,12 @@ button, .button:hover, button, .button:focus {
  table {
    color: #e3dac9;
    text-align: center;
-   margin-left: 45em;
-   margin-top: 5em;
-   margin-bottom: 5em;
+   margin: 5em auto;
  }
 
  .main-contact {
    color: #e3dac9;
+   text-align: center;
  }
  .contact-footer {
    background: #e3dac9;
